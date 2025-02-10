@@ -34,6 +34,7 @@ export function InputWrapper({
         <input 
           id={id}
           type="text"
+          autoComplete="off"
           value={inputValue}
           onChange={onInputChange}
           className={clsx(
@@ -93,7 +94,7 @@ export function InputWrapper({
                 animate={{ y: 0, opacity: 1 }}
                 exit={{ y: 20, opacity: 0 }}
                 transition={{ type: 'spring', duration: .6, bounce: .4 }}
-                className="absolute z-40 right-0 mt-1 w-44 rounded-lg overflow-hidden bg-white border-[1.5px] border-gray-700"
+                className="absolute z-40 right-0 mt-1 w-44 rounded-lg overflow-hidden bg-white border-[1.5px] border-black/15"
               >
                 {currencies.map((item) => (
                   <div 
