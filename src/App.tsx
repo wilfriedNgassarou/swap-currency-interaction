@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { InputWrapper } from "./components/input-wrapper"
 import { convertCurrency, Currency } from "./utils/convertCurrency"
+import { Credits } from "./components/credits"
 
 function App() {
   const [amount1CurrencyId, setAmount1CurrencyId] = useState<Currency>('eur')
@@ -11,6 +12,7 @@ function App() {
   
   return (
     <section className="w-full h-dvh flex justify-center items-center">
+      <Credits />
       <div className="w-80 p-3 border-[1.5px] border-black/30 rounded-3xl">
         <h2 className="font-medium text-lg text-gray-400">Swap Currency</h2>
         <div className="flex flex-col gap-1 mt-4">
